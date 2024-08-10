@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>potfolio</title>
+</head>
+<link rel="stylesheet" href="page.css">
+<body>
+    <nav>
+    <div class="logo">
+        <h1>D.O.E <span>GRAPHIC DESIGNS</span></h1>
+    </div>
+    <ul id="menuList">
+        <li><a href="index.html" style="--i:1;">home</a></li>
+        <li><a href="about.html"style="--i:2;">about</a></li>
+        <li><a href="design.html"style="--i:3;">design</a></li>
+        <li><a href="skill.html"style="--i:4;">skills</a></li>
+        <li><a href="testimonial.html"style="--i:5;">testimonial</a></li>
+    </ul>
+    <div class="menu-icon">
+        <i class="fa-solid fa-bars"onclick="toggleMenu()"></i>
+    </div>
+</nav>
+    <img src="Screenshot_20240806-053631.jpg" alt="" class="image">
+    <div class="content">
+    <h1>HI, I'M</h1>
+     <h1>ESECHIE OSARO DAVID</h1>
+    <h2>I AM A GRAPHIC DESIGNER</h2>
+    <p>I am the CEO of the Graphic Brand D.O.E GRAPHIC DESIGN. I can help you create nice and outstanding DESIGNS.
+        I have been in Graphic Design field, with over 2 years of experience and i also have quite some ideas in marketing 
+        field, helping you present your brand in a more catchy and attractive way.my mission as a Graphic Designer
+       is to help Brands Create outstanding designs as such that will cause attraction and more recognition to the brand
+    </p> 
+    </p>
+    <button  id="primary-btn" >DESIGN</button>
+    </div>
+   
+    <script src="https://kit.fontawesome.com/1ab5eb52bd.js" crossorigin="anonymous"></script> 
+    <script>
+        let menuList=document.getElementById("menuList")
+        menuList.style.maxHeight="0px";
+
+        function toggleMenu(){
+            if(menuList.style.maxHeight=="0px")
+            {
+                menuList.style.maxHeight="300px"
+            }
+            else{
+                menuList.style.maxHeight="0px"
+            
+        }
+    }
+    const web_page="design.html";
+    const button=document.getElementById("primary-btn");
+     button.attachEvent(onclick,function () {
+        window.location=web_page;
+     });
+    </script>  
+    </body>
+    </html>
